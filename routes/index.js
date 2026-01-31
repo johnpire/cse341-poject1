@@ -1,6 +1,10 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {res.send('Welcome to the Home Page');});
+router.use('/', require('./swagger'));
+
+router.get('/', (req, res) => {
+    //#swagger.tags = ['Home']
+    res.send('Welcome to the Home Page');});
 
 router.use('/contacts', require('./contactsRoute'));
 
