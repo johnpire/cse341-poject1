@@ -5,10 +5,10 @@
     "description": "A simple CRUD API to manage contacts.",
     "version": "1.0.0"
   },
-  "host": "cse341-poject1.onrender.com",
+  "host": "localhost:3000z",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
